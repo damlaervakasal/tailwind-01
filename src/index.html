@@ -4,10 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/css/style.css" rel="stylesheet">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <!-- Header section -->
+    <header class="bg-black py-6 lg:py-12 py-12 text-deym-grey uppercase">
+      <!-- header container -->
+      <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
+        <!-- logo -->
+        <a href="#" class="pl-4 md:pl:0 text-4xl  lg:text-6xl font-bold text-deym-grey text-transparent bg-gradient-to-r bg-clip-text from-deym-melon to-deym-grey">DEYMIL</a>
+       
+        <!-- mobile menu -->
+        <div class="block md:hidden pr-4">
+          <div class="space-y-1 cursor-pointer">
+            <div class="bg-deym-grey w-8 h-1"></div>
+            <div class="bg-deym-grey w-8 h-1"></div>
+            <div class="bg-deym-grey w-8 h-1"></div>
+          </div>
+        </div>
+        <!-- navigation -->
+        <nav class="hidden md:flex justify-between flex-1">
+          <!-- menu -->
+          <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
+            <a href="#" class="hover:text-deym-melon transition duration-200">movies</a>
+            <a href="#" class="hover:text-deym-melon transition duration-200">celebrites</a>
+            <a href="#" class="hover:text-deym-melon transition duration-200">blog</a>
+            <a href="#" class="hover:text-deym-melon transition duration-200">news</a>
+            <a href="#" class="hover:text-deym-melon transition duration-200">about</a>
+          </div>
+          <!-- login area -->
+          <div class="flex items-center space-x-4 lg:space-x-8">
+            <!-- search area -->
+            <form>
+              <div class="group border-r px-4 mx-4 py1 border-deym-red">
+                <input type="text" class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-deym-red focus:outline-none w-24 lg:w-44 transation duration-5 00">
+                <button>
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+            <!-- signup area -->
+            <div class="flex items-center space-x-4 lg:space-x-8 text-lg">
+              <a href="#">Login</a>
+              <a href="#" class="bg-deym-red px-3 py-1 hover:bg-rose-600 hover:text-deym-grey cursor-pointer transation duration-200 whitespace-nowrap">Sign Up</a>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+
+    </header>
+
+  
 </body>
 </html>
