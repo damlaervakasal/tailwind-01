@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  darkMode: "class",
   theme: {
     container: {
       // boylelikle her container classın
@@ -23,6 +24,10 @@ module.exports = {
         "deym-melon": "#FFD369",
         "deym-grey": "#DDDDDD",
         "deym-white": "#F7F7F7",
+      },
+
+      spacing: {
+        128: "32rem",
       },
     },
   },

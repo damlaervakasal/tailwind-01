@@ -10,9 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body class="font-open dark">
+
+  <!-- dark light toggle  -->
+  <div class="absolute top-1 left-5 cursor-pointer text-lg">
+    <i class="fa-solid fa-sun text-white white:hidden" id="sun" ></i>
+    <i class="fa-solid fa-moon text-black dark:hidden" id="moon"></i>
+  </div>
+
     <!-- Header section -->
-    <header class="bg-black py-6 lg:py-12 py-12 text-deym-grey uppercase">
+    <header class="dark:bg-black bg-white py-6 lg:py-12 dark:text-deym-grey text-black uppercase">
       <!-- header container -->
       <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
         <!-- logo -->
@@ -58,7 +65,404 @@
       </div>
 
     </header>
+  
+    <!-- hero sections -->
+    <section class="h-128 group relative">
+      <!-- image -->
+      <img src="./images/4.jpg" alt="Main Image" class="h-full w-full object-cover">
 
+      <!-- content -->
+      <div class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to to-black">
+        <!-- content container -->
+        <div class="container pl-10 lg:pl-0">
+          <h3 class="text-deym-melon tracking-wider group-hover:mb-1 duration:500">
+            Action, Drama, Thriller 
+          </h3>
+          <h1 class="text-4xl lg:text-6xl text-deym-grey gruop-hover:mb-1 duration:500">
+            The Train Station
+          </h1>
+          <p class=" text-deym-grey gruop-hover:mb-2 duration:500 text-sm lg:text-base w-3/4 lg:w-2/3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure necessitatibus possimus suscipit doloribus! Modi animi cum laboriosam dignissimos sunt voluptates.
+          </p>
+          <!-- detaylı container -->
+          <div class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 lg:group-hover:mb-20 duration-1000">
+            <!-- watch -->
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a href="#" class="text-deym-grey uppercase lg:text-lg hover:text-deym-red duration-500">Watch Trailer</a>
+              <div class="flex h-8 w-8 rounded-full text-center items-center justify-center bg-deym-red text-deym-grey">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+
+            <!-- info -->
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a href="#" class="text-deym-grey uppercase lg:text-lg hover:text-deym-red duration-500">info</a>
+              <div class="flex h-8 w-8 rounded-full text-center items-center justify-center bg-deym-red text-deym-grey">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- points -->
+      <div class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-1000">
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-deym-red"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-deym-grey"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-deym-grey"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-deym-grey"></div>
+      </div>
+
+    </section>
+
+    <!-- music section -->
+    <section class="py-24 bg-black">
+      <!-- music contents -->
+      <div class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0">
+        <!-- left content -->
+        <div class="basis-2/3">
+          <!-- title -->
+          <div class="flex space-x-2 divide-x divide-deym-red divide-opacity-50 mb-8 pl-10 lg:pl-0">
+            <h2 class="text-deym-red"><a href="#">Latest</a></h2>
+            <h2 class="text-deym-grey pl-2 hover:text-deym-red duration-500"><a href="#">Popular</a></h2>
+            <h2 class="text-deym-grey pl-2 hover:text-deym-red duration-500"><a href="#">Best</a></h2>
+          </div>
+          <!-- images container -->
+          <div class="flex flex-wrap">
+            <!-- images-1 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="./images/1.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-deym-grey group-hover:text-melon group-hover:mb-2 duration-500">Oblivion</h3>
+                <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-deym-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, suscipit.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-deym-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="./images/1.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-deym-grey group-hover:text-melon group-hover:mb-2 duration-500">Oblivion</h3>
+                <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-deym-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, suscipit.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-deym-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="./images/2.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-deym-grey group-hover:text-melon group-hover:mb-2 duration-500">Oblivion</h3>
+                <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-deym-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, suscipit.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-deym-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="./images/3.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-deym-grey group-hover:text-melon group-hover:mb-2 duration-500">Oblivion</h3>
+                <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-deym-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, suscipit.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-deym-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="./images/5.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-deym-grey group-hover:text-melon group-hover:mb-2 duration-500">Oblivion</h3>
+                <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-deym-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, suscipit.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-deym-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="./images/6.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-deym-grey group-hover:text-melon group-hover:mb-2 duration-500">Oblivion</h3>
+                <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-deym-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, suscipit.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-deym-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-deym-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right content -->
+        <div class="basis-1/3 pl-10 lg:pl-0">
+          <!-- title -->
+          <h2 class="text-deym-grey mb-8">Hot News</h2>
+          <!-- news container -->
+          <div class="flex flex-row lg:flex-col lg:h-full lg:pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4">
+            <!-- item -->
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!-- news image container -->
+              <div class="basis-1/3 h-full">
+              <img src="./images/2.jpg" class="h-full w-full object-cover">
+            </div>
+            <!-- item detail -->
+            <div class="pl-8 basis-2/3 text-deym-grey group-hover:text-deym-melon group-hover:cursor-pointer duration-500">
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at?</p>
+            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu"> ON NOW 01 2022 </p>
+          </div>
+        </div>
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!-- news image container -->
+              <div class="basis-1/3 h-full">
+              <img src="./images/2.jpg" class="h-full w-full object-cover">
+            </div>
+            <!-- item detail -->
+            <div class="pl-8 basis-2/3 text-deym-grey group-hover:text-deym-melon group-hover:cursor-pointer duration-500">
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at?</p>
+            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu"> ON NOW 01 2022 </p>
+          </div>
+        </div>
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!-- news image container -->
+              <div class="basis-1/3 h-full">
+              <img src="./images/3.jpg" class="h-full w-full object-cover">
+            </div>
+            <!-- item detail -->
+            <div class="pl-8 basis-2/3 text-deym-grey group-hover:text-deym-melon group-hover:cursor-pointer duration-500">
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at?</p>
+            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu"> ON NOW 01 2022 </p>
+          </div>
+        </div>
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!-- news image container -->
+              <div class="basis-1/3 h-full">
+              <img src="./images/2.jpg" class="h-full w-full object-cover">
+            </div>
+            <!-- item detail -->
+            <div class="pl-8 basis-2/3 text-deym-grey group-hover:text-deym-melon group-hover:cursor-pointer duration-500">
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at?</p>
+            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu"> ON NOW 01 2022 </p>
+          </div>
+        </div>
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!-- news image container -->
+              <div class="basis-1/3 h-full">
+              <img src="./images/5.jpg" class="h-full w-full object-cover">
+            </div>
+            <!-- item detail -->
+            <div class="pl-8 basis-2/3 text-deym-grey group-hover:text-deym-melon group-hover:cursor-pointer duration-500">
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at?</p>
+            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu"> ON NOW 01 2022 </p>
+          </div>
+        </div>
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!-- news image container -->
+              <div class="basis-1/3 h-full">
+              <img src="./images/2.jpg" class="h-full w-full object-cover">
+            </div>
+            <!-- item detail -->
+            <div class="pl-8 basis-2/3 text-deym-grey group-hover:text-deym-melon group-hover:cursor-pointer duration-500">
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at?</p>
+            <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu"> ON NOW 01 2022 </p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- cem section -->
+    <section class="bg-deym-white h-56">
+      <!-- cem section container  -->
+      <div class="container flex item-center justify-center relative pl-10 lg:pl-0">
+        <!-- left content -->
+        <div class=" hidden md:block basis-1/3 ">
+          <img src="./images/cem.jpg" alt="" class="absolute top-2 bottom-0 h-full">
+        </div>
+        <!-- right content -->
+        <div class="basis-1/3 flex-row lg:flex-col">
+          <!-- right content container -->
+          <div class="flex flex-col justify-center py-2 lg:py-10  w-3/4 md:w-full">
+            <h3 class="tracking-wider text-deym-melon">DRAMA,MELONCOLIE</h3>
+            <h2 class="mb-2">Cem Adrian</h2>
+            <p class="text-sm mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, tenetur!</p>
+            <h3 class="tracking-wider text-deym-red hidden sm:block">8 wins 34 nom</h3>
+          </div>
+        </div>
+          <!-- oldie -->
+          <div class="left-10 absolute  -top-7 lg:-top-12 lg:left-0 w-12 h-12 lg:w-24 lg:h-24 bg-deym-red rounded-full text-center flex items-center">
+            <p class="font-gemunu uppercase font-bold text-sm lg:text-xl text-deym-grey -rotate-45">the best of</p>
+
+          </div>
+
+      </div>
+    </section>
+
+    <!-- post section -->
+    <section class="py-24 bg-black text-deym-grey">
+      <!-- container -->
+      <div class="container px-10 lg:px-0">
+        <!-- title -->
+        <h2 class="text-deym-red"><a href="#">Popular Posts</a></h2>
+
+        <!-- grid area -->
+        <div class="grid grid-cols-6 gap-10">
+          <!-- item 1 -->
+          <div class="col-span-6 md:col-span-3 border border-deym-red">
+            <!-- item 1 header -->
+            <div class="border-b border-deym-red p-4 flex items-center justify-between">
+              <h3>denial_24</h3>
+              <img src="./images/h1.jpg" alt="" class="rounded-full w-10 h-10">
+            </div>
+            <!-- item 1 paragraph -->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto quidem illum necessitatibus fugiat incidunt modi tempora perspiciatis dolor. Perspiciatis.</p>
+            <!-- item 1 footer -->
+            <div class="border-b border-deym-red p-4 flex item-center justify-between space-x-4 font-bold font-gemunu text-xs">
+              <p> ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="col-span-6 md:col-span-3 border border-deym-red">
+            <!-- item 2 header -->
+            <div class="border-b border-deym-red p-4 flex items-center justify-between">
+              <h3>denial_24</h3>
+              <img src="./images/h2.jpg" alt="" class="rounded-full w-10 h-10">
+            </div>
+            <!-- item 2 paragraph -->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto quidem illum necessitatibus fugiat incidunt modi tempora perspiciatis dolor. Perspiciatis.</p>
+            <!-- item 2 footer -->
+            <div class="border-b border-deym-red p-4 flex item-center justify-between space-x-4 font-bold font-gemunu text-xs">
+              <p> ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+
+            <!-- item 3 -->
+            <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-deym-red">
+              <!-- item 1 header -->
+              <div class="border-b border-deym-red p-4 flex items-center justify-between">
+                <h3>denial_24</h3>
+                <img src="./images/h3.jpg" alt="" class="rounded-full w-10 h-10">
+              </div>
+              <!-- item 1 paragraph -->
+              <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto quidem illum necessitatibus fugiat incidunt modi tempora perspiciatis dolor. Perspiciatis.</p>
+              <!-- item 1 footer -->
+              <div class="border-b border-deym-red p-4 flex item-center justify-between space-x-4 font-bold font-gemunu text-xs">
+                <p> ON DEC 17, 2022</p>
+                <div class="flex items-center justify-center space-x-1">
+                  <i class="fa-regular fa-comment"></i>
+                  <p>12</p>
+                  <i class="fa-regular fa-heart"></i>
+                  <p>09</p>
+                </div>
+              </div>
+            </div>
+
+              <!-- item-4 -->
+              <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-deym-red">
+                <!-- item 1 header -->
+                <div class="border-b border-deym-red p-4 flex items-center justify-between">
+                  <h3>denial_24</h3>
+                  <img src="./images/h4.jpg" alt="" class="rounded-full w-10 h-10">
+                </div>
+                <!-- item 1 paragraph -->
+                <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto quidem illum necessitatibus fugiat incidunt modi tempora perspiciatis dolor. Perspiciatis.</p>
+                <!-- item 1 footer -->
+                <div class="border-b border-deym-red p-4 flex item-center justify-between space-x-4 font-bold font-gemunu text-xs">
+                  <p> ON DEC 17, 2022</p>
+                  <div class="flex items-center justify-center space-x-1">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>12</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>09</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item-5 -->
+              <div class="hidden lg:block col-span-6 md:col-span-3 lg:col-span-2 border border-deym-red">
+                <!-- item 1 header -->
+                <div class="border-b border-deym-red p-4 flex items-center justify-between">
+                  <h3>denial_24</h3>
+                  <img src="./images/h5.jpg" alt="" class="rounded-full w-10 h-10">
+                </div>
+                <!-- item 1 paragraph -->
+                <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto quidem illum necessitatibus fugiat incidunt modi tempora perspiciatis dolor. Perspiciatis.</p>
+                <!-- item 1 footer -->
+                <div class="border-b border-deym-red p-4 flex item-center justify-between space-x-4 font-bold font-gemunu text-xs">
+                  <p> ON DEC 17, 2022</p>
+                  <div class="flex items-center justify-center space-x-1">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>12</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>09</p>
+                  </div>
+                </div>
+              </div>
+             
+        </div>           
+      </div>
+
+        </div>  
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-black text-deym-grey">
+      <!-- footer container -->
+      <div class="container flex flex-col md:flex-row px-10 lg:px-0 pb-8">
+        <!-- left -->
+        <div class="basis-1/3 mb-4 lg:mb-2">
+          <a href="#" 
+            class="text-2xl lg:text-3xl  font-bold text-deym-grey text-transparent bg-gradient-to-r bg-clip-text from-deym-melon to-deym-grey">DEYMIL</a>
+            <p class="text-sm mt-2">2022 deym soft</p>
+          </div>
+          <!-- middle -->
+          <div class="basis-1/3">
+            <h2 class=" text-deym-red">LINKS</h2>
+            <div class="grid grid-cols-5 gap-2 uppercase">
+              <a href="#" class="col-span-2 hover:text-deym-melon">Mobies</a>
+              <a href="#" class="col-span-2 hover:text-deym-melon">celebreties</a>
+              <a href="#" class="col-span-2 hover:text-deym-melon">blog</a>
+              <a href="#" class="col-span-2 hover:text-deym-melon">news</a>
+              <a href="#" class="mb-4 lg:mb-2 col-span-2 hover:text-deym-melon">about</a>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div class="basis-1/3">
+          <h2 class="mb-4 lg:mb-2 text-deym-red">FOLLOW US</h2>
+          <form action="" class="flex">
+            <input type="text" placeholder="e-mail" class="rounded-xl mr-1 py-1 px-2 bg-transparent border border-deym-red placeholder:text-xs outline-none">
+            <button class="py-1 px-2 bg-deym-red border border-deym-red rounded-xl font-gemunu uppercase">Subscribe</button>
+          </form>
+          </div>
+        </div> 
+    </footer>
+
+<script src="./js/script.js"></script>
   
 </body>
 </html>
